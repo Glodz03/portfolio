@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    padding:40px 20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:40px;
+    color:#222;
+}
+
+.project{
+    max-width:1100px;
+    margin:0 auto 50px;
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.project h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.project p{
+    text-align:center;
+    margin-top:20px;
+    color:#666;
+    line-height:1.6;
+}
+
+.carousel{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.carousel-image{
+    width:100%;
+    max-width:850px;
+    height:480px;
+    object-fit:contain;
+    background:#fafafa;
+    border:2px solid #ddd;
+    border-radius:10px;
+}
+
+.prev,
+.next{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#222;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+    flex-shrink:0;
+}
+
+.prev:hover,
+.next:hover{
+    background:#555;
+}
+
+.counter{
+    text-align:center;
+    margin-top:15px;
+    color:#777;
+    font-size:.95rem;
+}
+
+@media(max-width:768px){
+
+    .carousel-image{
+        height:300px;
+    }
+
+    .prev,
+    .next{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="project">
+    <h2>Final Beat</h2>
+
+    <div class="carousel" data-project="finalbeat">
+        <button class="prev">←</button>
+
+        <img
+            src="Images/Finalbeat/Final Beat Home.png"
+            alt="Final Beat Screenshot"
+            class="carousel-image"
+        >
+
+        <button class="next">→</button>
+    </div>
+
+    <div class="counter">
+        <span class="current-slide">1</span> /
+        <span class="total-slides">0</span>
+    </div>
+
+    <p>
+        Final Beat is a music platform. It features a music player, library, playlists, ratings and much more.
+    </p>
+</section>
+
+<section class="project">
+    <h2>Lifesync</h2>
+
+    <div class="carousel" data-project="lifesync">
+        <button class="prev">←</button>
+
+        <img
+            src="Images/Lifesync/Home.png"
+            alt="Lifesync Screenshot"
+            class="carousel-image"
+        >
+
+        <button class="next">→</button>
+    </div>
+
+    <div class="counter">
+        <span class="current-slide">1</span> /
+        <span class="total-slides">0</span>
+    </div>
+
+    <p>
+        Lifesync is a gamified productivity application featuring budgeting,
+        calendars, checklists, whiteboards and much more.
+    </p>
+</section>
+
+<script>
+
+const projects = {
+
+    finalbeat: [
+        "Images/Finalbeat/home.png",
+        "Images/Finalbeat/colourpick.png",
+        "Images/Finalbeat/redhome.png",
+        "Images/Finalbeat/orangehome.png",
+        "Images/Finalbeat/yellowhome.png",
+        "Images/Finalbeat/greenhome.png",
+        "Images/Finalbeat/pinkhome.png",
+        "Images/Finalbeat/pastelpurplehome.png",
+        "Images/Finalbeat/purplehome.png",
+        "Images/Finalbeat/hybridhome.png",
+        "Images/Finalbeat/hybrid2home.png",
+        "Images/Finalbeat/silverhome.png",
+        "Images/Finalbeat/goldhome.png",
+        "Images/Finalbeat/homelight.png",
+        "Images/Finalbeat/bothhomes.png",
+        "Images/Finalbeat/musichome.png",
+        "Images/Finalbeat/musiclight.png",
+        "Images/Finalbeat/bothmusic.png",
+        "Images/Finalbeat/raphome.png",
+        "Images/Finalbeat/raplight.png",
+        "Images/Finalbeat/bothrap.png",
+        "Images/Finalbeat/rapartists.png",
+        "Images/Finalbeat/fhd.png",
+        "Images/Finalbeat/fhdlight.png",
+        "Images/Finalbeat/bothfhd.png",
+        "Images/Finalbeat/fhdPick.png",
+        "Images/Finalbeat/account.png",
+        "Images/Finalbeat/accountlight.png",
+        "Images/Finalbeat/bothaccounts.png",
+        "Images/Finalbeat/library.png",
+        "Images/Finalbeat/playlist.png",
+        "Images/Finalbeat/ratings.png"
+    ],
+
+    lifesync: [
+        "Images/Lifesync/home.png",
+        "Images/Lifesync/homedark.png",
+        "Images/Lifesync/greenhome.png",
+        "Images/Lifesync/tanhome.png",
+        "Images/Lifesync/redhome.png",
+        "Images/Lifesync/yellowhome.png",
+        "Images/Lifesync/lavendarhome.png",
+        "Images/Lifesync/colourpick.png",
+        "Images/Lifesync/budget.png",
+        "Images/Lifesync/budgeterdark.png",
+        "Images/Lifesync/budgetstats.png",
+        "Images/Lifesync/checklist.png",
+        "Images/Lifesync/checkliststats.png",
+        "Images/Lifesync/whiteboard.png",
+        "Images/Lifesync/whiteboarddark.png",
+        "Images/Lifesync/calendar.png",
+        "Images/Lifesync/calendardark.png",
+        "Images/Lifesync/monthcalendar.png",
+        "Images/Lifesync/monthcalendardark.png",
+        "Images/Lifesync/trophy.png",
+        "Images/Lifesync/trophydark.png"
+    ]
+};
+
+document.querySelectorAll(".carousel").forEach(carousel => {
+
+    const projectName = carousel.dataset.project;
+    const images = projects[projectName];
+
+    let currentIndex = 0;
+
+    const image = carousel.querySelector(".carousel-image");
+    const prevBtn = carousel.querySelector(".prev");
+    const nextBtn = carousel.querySelector(".next");
+
+    const projectSection = carousel.closest(".project");
+
+    const currentSlide =
+        projectSection.querySelector(".current-slide");
+
+    const totalSlides =
+        projectSection.querySelector(".total-slides");
+
+    totalSlides.textContent = images.length;
+
+    function updateCarousel() {
+        image.src = images[currentIndex];
+        currentSlide.textContent = currentIndex + 1;
+    }
+
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener("click", () => {
+        currentIndex =
+            (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+
+    // Auto-play every 4 seconds
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    }, 4000);
+
+    updateCarousel();
+
+});
+
+</script>
+
+</body>
+</html>
