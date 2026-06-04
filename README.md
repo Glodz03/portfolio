@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 https://glodz03.github.io/portfolio/
 
