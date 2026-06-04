@@ -36,7 +36,7 @@ A HTML, CSS, Javascript life management website which is gamified including whit
 ![img](Images/Lifesync/budget.png)
 
 ### Daily Checklist Page
-![img](Images/Lifesync/dailychecklist.png)
+![img](Images/Lifesync/checklist.png)
 
 ### Whiteboard Page
 ![img](Images/Lifesync/whiteboard.png)
