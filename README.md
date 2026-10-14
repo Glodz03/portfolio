@@ -38,9 +38,17 @@ A HTML, CSS, Javascript life management website which is gamified including whit
 ### Daily Checklist Page
 ![img](Images/Lifesync/checklist.png)
 
-### Whiteboard Page
-![img](Images/Lifesync/whiteboard.png)
+## One More Turn
+A HTML, CSS, Javascript online arcade full of games to play.
 
-### Trophy Page
-![img](Images/Lifesync/trophy.png)
+### Tic Tac Toe Page
+![img](Images/Arcade/tictactoe.png)
 
+### Connect 4 Page
+![img](Images/Arcade/connect4.png)
+
+### Mastermind Page
+![img](Images/Arcade/mastermind.png)
+
+### Hangman Page
+![img](Images/Arcade/hangman.png)
