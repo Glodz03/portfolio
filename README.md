@@ -52,3 +52,6 @@ A HTML, CSS, Javascript online arcade full of games to play.
 
 ### Hangman Page
 ![img](Images/Arcade/hangman.png)
+
+### Crossword Page
+![img](Images/Arcade/crossword.png)
